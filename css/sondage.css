@@ -1,0 +1,134 @@
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #3f3f3f;
+  }
+  
+  .slide {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s;
+  }
+  
+  .active-slide {
+      opacity: 1;
+      z-index: 2;
+  }
+  
+  .quiz-container {
+      position: relative;
+      height: 200px;
+      margin-top: 40px;
+      text-align: center;
+  }
+  
+  .question {
+      background-color: #edf2f4;
+      padding: 25px;
+      margin-left: 35%;
+      margin-right: 35%;
+      margin-top: 3%;
+      width: auto;
+      font-size: 20px;
+      color: #e63946;
+  }
+  
+  .answers {
+      margin-top: 75px;
+  }
+  
+  input {
+      background-color: #8d99ae;
+      border: none;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 50px;
+      border: 0.1em solid #FFFFFF;
+      box-sizing: border-box;
+      font-weight: 300;
+      transition: all 0.5s;
+      border-radius: 10px;
+  }
+  
+  input:hover {
+      color: #000000;
+      background-color: #FFFFFF;
+  }
+  
+  #next,
+  #previous,
+  #submit {
+      margin-top: 400px;
+      background-color: #454955;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 14px;
+      box-shadow: 7px 4px 4px rgb(180, 213, 255);
+      transition: 0.4s;
+  }
+  
+  #next:hover {
+      transform: scale(0.9);
+  }
+  
+  #results {
+      color: skyblue;
+      margin-top: 30px;
+      font-size: 20px;
+  }
+  
+  @media (min-width: 666px) and (max-width: 806px) {
+      input {
+          padding: 15px;
+          font-size: 14px;
+      }
+      #submit {
+          margin-top: 500px;
+      }
+  }
+  
+  @media (min-width: 512px) and (max-width: 666px) {
+      .question {
+          margin-left: 20%;
+          margin-right: 20%;
+          font-size: 15px;
+      }
+      input {
+          padding: 15px;
+          font-size: 14px;
+      }
+      #submit {
+          margin-top: 550px;
+      }
+  }
+  
+  @media (min-width: 300px) and (max-width: 512px) {
+      .question {
+          margin-left: 10%;
+          margin-right: 10%;
+          font-size: 15px;
+      }
+      input {
+          padding: 15px;
+          font-size: 14px;
+      }
+      #submit {
+          margin-top: 550px;
+      }
+  }

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 20px;
+    color: silver;
+}
+
+hr {
+    width: 60%;
+    margin: auto;
+}
+
+p {
+    width: 100px;
+    margin-right: 150px;
+}
+
+.amis {
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: gray;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.titre2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 20px;
+    color: silver;
+}
+
+.ajout {
+    margin-top: 20px;
+    font-size: 18px;
+    justify-content: center;
+    display: flex;
+    width: 91%;
+}

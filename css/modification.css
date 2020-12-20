@@ -1,0 +1,56 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.EbgnM {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.EtextM h2 {
+    color: white;
+    font-size: 4vh;
+}
+
+input {
+    display: block;
+    margin-top: 4vh;
+    text-decoration: none;
+    border: 2px solid orange;
+    border-radius: 20px;
+    text-align: center;
+    width: 25vh;
+    height: 2vh;
+}
+
+input::placeholder {
+    color: orange;
+}
+
+.EtextM {
+    padding-top: 15vh;
+}
+
+.loginM {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: orange;
+    text-align: center;
+    height: 4vh;
+    width: 10vh;
+    margin-left: 8vh;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 3vh;
+}
+
+.loginM a {
+    color: white;
+    text-decoration: none;
+} */

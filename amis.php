@@ -101,10 +101,11 @@ if(empty($_SESSION['membre'])) {
     </header>
 
     <div class="titre">
-        <h2>Amis de -<?php echo $_SESSION['membre']['pseudo'];
+        <h2>Amis de <?php echo $_SESSION['membre']['pseudo'];
         ?>
-        -</h2>
+        </h2>
     </div>
+    <hr class="firsthr">
 
     <?php
        $liste_amis = $conn->query("SELECT pseudo FROM membre WHERE id_user IN (SELECT user_id2 FROM amis WHERE user_id1=$userConId)");
@@ -132,17 +133,18 @@ if(empty($_SESSION['membre'])) {
                         </h2>
                         <form method="post">
                         <input id="userdelete" name="userdelete" type="hidden" value="<?php echo $info_liste_amis['pseudo']; ?>">
-                        <button type="submit" name="supprimer_amis" value="Supprimer">Supprimer</button>
+                        <button type="submit" class="btn-supp" name="supprimer_amis" value="Supprimer">Supprimer</button>
     </form>
                     </div>
+                    
     <?php
         }
     ?>  
 
-    <div class="titre2">
+    <div class="titre">
         <h2>Ajouter des amis</h2>
     </div>
-<hr>
+<hr class="secondhr">
     <?php
         $liste_non_amis = $conn->query("SELECT pseudo FROM membre WHERE id_user NOT IN (SELECT user_id2 FROM amis WHERE user_id1=$userConId)");
         while($info_liste_non_amis = $liste_non_amis->fetch(PDO::FETCH_ASSOC)){
@@ -154,7 +156,7 @@ if(empty($_SESSION['membre'])) {
 
             <form method="post">
                 <input id="useradd" name="useradd" type="hidden" value="<?php echo $info_liste_non_amis['pseudo'];?>">
-                <button type="submit" name="ajouter_amis" value="Ajouter">Ajouter</button>
+                <button type="submit" class="btn-add" name="ajouter_amis" value="Ajouter">Ajouter</button>
             </form>
             
             </div>

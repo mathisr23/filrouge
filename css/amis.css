@@ -11,9 +11,22 @@
     color: silver;
 }
 
-hr {
+.firsthr {
     width: 60%;
     margin: auto;
+    border: 0;
+    height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, green, #ccc);
+}
+
+.secondhr {
+    width: 60%;
+    margin: auto;
+    border: 0;
+    height: 3px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, orange, #ccc);
 }
 
 p {
@@ -39,18 +52,33 @@ button {
     font-size: 12px;
 }
 
-.titre2 {
+.btn-supp:hover {
+    background-color: firebrick;
+}
+
+.btn-add:hover {
+    background-color: rgb(164, 255, 128);
+}
+
+.titre {
     display: flex;
     justify-content: center;
     margin-top: 60px;
     font-size: 20px;
     color: silver;
+    height: 50px;
 }
 
 .ajout {
     margin-top: 20px;
+    height: 50px;
     font-size: 18px;
     justify-content: center;
     display: flex;
-    width: 91%;
+}
+
+.ajout p {
+    color: orange;
+    padding-right: 50px;
+    width: 10%;
 }

@@ -84,26 +84,26 @@ if(isset($_POST['mdp'])) {
             <span><a href="deconnexion.php" title="Se déconnecter">Se déconnecter</a></span>
 
             <span><a href="inscription.php" title="Inscription">Inscription</a></span>
-            <!-- <h1 id="userName"></h1> -->
+       
         </nav>
     </header>
 
     <section>
         <div class="divconnexion">
-        <h2> Bienvenue :
+        <h1> Bienvenue 
         
         <?php 
         if(isset($_SESSION['membre']['pseudo'])) {
             echo $_SESSION['membre']['pseudo']; //  Affiche nom membre connecter
         }
         ?>
-        </h2>
+        </h1>
                     
         </div>
     </section>
 
-    <div class="EbgnM">
-        <section class="EformM">
+    <div class="box">
+        <section class="form">
  
                 <h2>Modification :</h2>
 
@@ -120,13 +120,13 @@ if(isset($_POST['mdp'])) {
 					?>
 					<label>Pseudo :</label>
 					<br>
-					<input type="text" placeholder="New Pseudonyme" name="pseudo">
+					<input type="text" placeholder="Nouveau pseudo" name="pseudo">
                     <input type="submit" value="Modifier" class="mdpM" name="Modification1">
                 </div>
                 <form>
 
                 <form id="formMdp" method="post" action="">
-                <div>
+                <div class="mdp">
 					<?php
 						if(isset($err_mdp)){
 							echo $err_mdp;
@@ -138,7 +138,7 @@ if(isset($_POST['mdp'])) {
 					?>
 					<label>Mdp :</label>
 					<br>
-					<input type="password" placeholder="New Password" name="mdp">
+					<input type="password" placeholder="Nouveau mot de passe" name="mdp">
                     <input type="submit" value="Modifier" class="mdpM" name="Modification2">
 				</div>
                 <form>

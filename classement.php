@@ -48,7 +48,7 @@
             <span><a href="deconnexion.php" title="Se déconnecter">Se déconnecter</a></span>
 
             <span><a href="inscription.php" title="Inscription">Inscription</a></span>
-            <!-- <h1 id="userName"></h1> -->
+    
         </nav>
 </header>
 

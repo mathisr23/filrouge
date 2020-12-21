@@ -38,7 +38,7 @@
             <span><a href="deconnexion.php" title="Se déconnecter">Se connecter</a></span>
 
             <span><a href="inscription.php" title="Inscription">Inscription</a></span>
-            <!-- <h1 id="userName"></h1> -->
+           
         </nav>
     </header>
 
@@ -58,8 +58,8 @@
                         echo '<hr>';
                     ?>-->
                 
-                <br>
-                <hr>
+               <h1>Inscrivez-vous !</h1>
+                
                 <label for="mail">Adresse Mail</label><br>
                 <input type="mail" name="mail" class="form_connexion" id="mail" required><br><br>
 

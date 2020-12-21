@@ -25,35 +25,14 @@ function getMessages() {
         }
     })
 
-
-//     const requeteAjax = new XMLHttpRequest();
-//     requeteAjax.open('POST', 'index.php?task=write');
-    
-//     requeteAjax.onload = function(){
-//         getMessages();
-//     }
-
-//     requeteAjax.send(data);
-// 
 }
 
 // clear input after submit
 
 function submitForm() {
-    setTimeout (function(){
+    setTimeout(function() {
         var frm = document.getElementsByName('tchat')[0];
-        frm.reset(); 
-        return false; 
+        frm.reset();
+        return false;
     }, 0);
 }
-
-// forbidden empty input
-
-// function validateForm() {
-//     var x = document.forms["tchat"]["fchat"].value;
-//     if (x == "" || x == null) {
-//       alert("Name must be filled out");
-//       return false;
-//     }
-//   }
-

@@ -15,7 +15,7 @@ if(empty($_SESSION['membre'])) {
     <link rel="stylesheet" href="css/pageSondages.css">
      <script src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Fil rouge test</title>
+    <title>Fil rouge</title>
 </head>
 
 <body>
@@ -159,10 +159,7 @@ if(empty($_SESSION['membre'])) {
                                    
                     <p id="tempsRestant<?php echo $id_sond ?>">
                         <?php   
-                        // $please = new DateTime($sond_en_cours['dateFin']);
-                        // echo $please;
-                        // echo $stringDate = $please->format('Y-m-d H:i:s');
-                        $dateFin = $sond_en_cours['dateFin'];
+                            $dateFin = $sond_en_cours['dateFin'];
                         ?>
 
                         <script>
@@ -171,7 +168,7 @@ if(empty($_SESSION['membre'])) {
                             var id_sond = "<?php echo $id_sond ?>";
                             var targetedTag = "tempsRestant"+ id_sond;
                             var countDownDate = new Date(dateFin).getTime();
-                            // document.getElementById(targetedTag).innerHTML = countDownDate;
+                           
 
                             // Update the count down every 1 second
                             var x = setInterval(function() {

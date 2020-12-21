@@ -18,7 +18,7 @@ if(empty($_SESSION['membre'])) {
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Fil rouge test</title>
+    <title>Fil rouge</title>
 </head>
 
 <body>

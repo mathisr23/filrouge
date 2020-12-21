@@ -12,9 +12,6 @@ class Chat{
     {
         $pseudo = $_SESSION['membre']['pseudo'];
         $prepare = $this->pdo->prepare("INSERT INTO messages (content, user) VALUES (:content, '$pseudo')");
-        
-
-        // $prepare->bindParam(":content", $data["content"]);
         $prepare->execute($data);
 
         echo json_encode("");

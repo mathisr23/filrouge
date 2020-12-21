@@ -85,13 +85,10 @@
 
             // on vérifie le mdp, pour cela il faut traiter la réponse avec un fetch
             $infos_membre = $recup_infos->fetch(PDO::FETCH_ASSOC);
-            // echo '<pre>'; print_r($infos_membre); echo '</pre>';
+       
 
 
-            //ne marche pas
-            // var_dump(password_verify($mdp, $infos_membre['mdp']));
-
-            // if(password_verify($mdp, $infos_membre['mdp'])) {
+    
                 if($mdp == $infos_membre['mdp']) {
             //     // le mdp est bon, on met à jour lel statut utilisateur
             $st_update = $conn->prepare("
@@ -123,9 +120,7 @@
         }
     } 
 ?>
-    <!-- <section>
-        <div class="divconnexion">
-        <h2> Bienvenue :
+   
         
         <?php 
         if(isset($_SESSION['membre']['pseudo'])) {
@@ -133,10 +128,7 @@
         }
         ?>
 
-        . Vous êtes connecté !</h2>
-                    
-        </div>
-    </section> -->
+    
 
 
 </body>

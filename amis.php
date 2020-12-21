@@ -8,20 +8,6 @@ if(empty($_SESSION['membre'])) {
     
 }
 
-
-// if(!empty($_POST)){
-//     extract($_POST);
-//     $valid = (boolean) true;
-
-//     if(isset($_POST['user-ajouter'])){
-//          $req = $conn->prepare("SELECT id FROM relation WHERE (id_receveur = ? AND id_demandeur = ?) OR (id_receveur = ? AND id_demandeur = ?)");
-//          $req->execute(array());
-//     }else if(isset($_POST['user-supprimer'])){
-        
-//     }
-// }
-
-
     // verification si ajout ou suppression d'amis demandées
     $userConId = $_SESSION['membre']['id_user'];
     

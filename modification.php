@@ -121,7 +121,7 @@ if(isset($_POST['mdp'])) {
 					<label>Pseudo :</label>
 					<br>
 					<input type="text" placeholder="Nouveau pseudo" name="pseudo">
-                    <input type="submit" value="Modifier" class="mdpM" name="Modification1">
+                    <input type="submit" value="MODIFIER" class="mdpM" name="Modification1">
                 </div>
                 <form>
 
@@ -139,7 +139,7 @@ if(isset($_POST['mdp'])) {
 					<label>Mdp :</label>
 					<br>
 					<input type="password" placeholder="Nouveau mot de passe" name="mdp">
-                    <input type="submit" value="Modifier" class="mdpM" name="Modification2">
+                    <input type="submit" value="MODIFIER" class="mdpM" name="Modification2">
 				</div>
                 <form>
 

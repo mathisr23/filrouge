@@ -49,7 +49,7 @@
                         <br>
                         <input type="password" name="mdp" class="form_connexion" id="mdp">
           
-                        <button type="submit" name="connexion" class="form_connexion_submit" id="connexion"> Se connecter </button>
+                        <button type="submit" name="connexion" class="form_connexion_submit" id="connexion"> SE CONNECTER </button>
 
                     </form>
                 </div>

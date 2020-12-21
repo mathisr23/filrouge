@@ -62,7 +62,7 @@ if(empty($_SESSION['membre'])) {
 
                 <h1>Défiez vos amis deviendra<br>plus fun avec des paris !</h1>
                 <p>Défiez vos amis sur une thématique au choix ! Choisissez un gage, le perdant doit réaliser le gage sélectionné par le gagnant.</p>
-                <a href="">Ajouter des amis</a>
+                <a href="amis.php">Ajouter des amis</a>
             </div>
 
             <div class="img">
@@ -87,7 +87,7 @@ if(empty($_SESSION['membre'])) {
 
 
         <div class="bouton">
-            <a href="">Défier vos amis gratuitement !</a>
+            <a href="creation.php">Défier vos amis gratuitement !</a>
         </div>
     </main>
 
@@ -121,7 +121,7 @@ if(empty($_SESSION['membre'])) {
     </article>
 
     <div class="bouton2">
-        <a href="">Découvrir nos sondages</a>
+        <a href="pageSondages.php">Découvrir nos sondages</a>
     </div>
 
     <!-- 4E SECTION -->
@@ -157,7 +157,7 @@ if(empty($_SESSION['membre'])) {
         </article>
 
         <div class="bouton3">
-            <a href="">S'inscrire et profiter de toutes les fonctionnalités</a>
+            <a href="creation.php">Créez des paris personnalisés</a>
         </div>
 
     </section>

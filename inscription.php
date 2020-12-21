@@ -35,7 +35,7 @@
                 </li>
 
             </ul>
-            <span><a href="deconnexion.php" title="Se déconnecter">Se connecter</a></span>
+            <span><a href="deconnexion.php" title="Se déconnecter">Se déconnecter</a></span>
 
             <span><a href="inscription.php" title="Inscription">Inscription</a></span>
            
@@ -71,7 +71,7 @@
 
                 <br>
 
-                <button type="submit" name="Valider" class="form_connexion_submit" id="connexion"> Se connecter </button>
+                <button type="submit" name="Valider" class="form_connexion_submit" id="connexion"> S'INSCRIRE </button>
 
             </form>
         </section>
